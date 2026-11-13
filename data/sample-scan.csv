@@ -1,0 +1,31 @@
+Host,FQDN/IP,CVE,CVSS v3 Base Score,Risk,Name,Solution,First Found,Asset Criticality
+web-01,web01.demo.local,CVE-2021-44228,10.0,Critical,Apache Log4j2 Remote Code Execution,Upgrade Log4j to 2.17.1 or later,2026-09-03,Critical
+web-01,web01.demo.local,CVE-2021-44228,10.0,Critical,Apache Log4j2 Remote Code Execution,Upgrade Log4j to 2.17.1 or later,2026-09-20,Critical
+web-01,web01.demo.local,CVE-2023-44487,7.5,High,HTTP/2 Rapid Reset Denial of Service,Update the HTTP/2 implementation to a patched version,2026-10-28,Critical
+web-01,web01.demo.local,CVE-2018-7600,9.8,Critical,Drupal Core Remote Code Execution,Apply the Drupal security update,2026-11-08,Critical
+web-01,web01.demo.local,CVE-2003-1418,4.3,Medium,Apache ETag Header Information Disclosure,Set FileETag to None in the web server configuration,2026-04-11,Critical
+db-01,db01.demo.local,CVE-2019-0708,9.8,Critical,Microsoft RDP Remote Code Execution (BlueKeep),Apply the Microsoft security update and enable NLA,2026-08-15,Critical
+db-01,db01.demo.local,CVE-2020-1472,10.0,Critical,Netlogon Elevation of Privilege (Zerologon),Apply the August 2020 Netlogon security update,2026-10-02,Critical
+db-01,db01.demo.local,CVE-2023-21554,6.5,Medium,Microsoft Message Queuing Denial of Service,Apply the vendor security patch,2026-08-20,Critical
+dc-01,dc01.demo.local,CVE-2020-1472,10.0,Critical,Netlogon Elevation of Privilege (Zerologon),Apply the August 2020 Netlogon security update,2026-11-05,Critical
+dc-01,dc01.demo.local,CVE-2022-26923,8.8,High,AD Certificate Services Elevation of Privilege,Apply the update and audit certificate templates,2026-09-27,Critical
+dc-01,dc01.demo.local,CVE-2021-42278,8.8,High,sAMAccountName Spoofing Privilege Escalation,Apply the November 2021 domain controller updates,2026-10-24,Critical
+dc-01,dc01.demo.local,CVE-2024-38063,9.8,Critical,Windows TCP/IP Remote Code Execution,Apply the August 2024 security update,2026-08-02,Critical
+vpn-gw-01,vpn01.demo.local,CVE-2024-3400,10.0,Critical,VPN Gateway Command Injection,Upgrade the gateway OS to a fixed release,2026-09-14,High
+vpn-gw-01,vpn01.demo.local,CVE-2023-4966,7.5,High,VPN Gateway Session Token Disclosure (Citrix Bleed),Upgrade gateway firmware and invalidate active sessions,2026-08-29,High
+vpn-gw-01,vpn01.demo.local,CVE-2024-21893,8.2,High,VPN Gateway Server-Side Request Forgery,Apply the vendor mitigation and patch,2026-10-19,High
+vpn-gw-01,vpn01.demo.local,CVE-2019-19781,9.8,Critical,VPN Gateway Path Traversal Remote Code Execution,Apply the vendor fix and check for compromise indicators,2026-10-26,High
+app-01,app01.demo.local,CVE-2023-34362,9.8,Critical,MOVEit Transfer SQL Injection,Upgrade MOVEit Transfer to a patched version,2026-07-21,High
+app-01,app01.demo.local,CVE-2024-40711,9.8,Critical,Backup Agent Deserialization Remote Code Execution,Update the backup agent to the latest version,2026-10-30,High
+app-01,app01.demo.local,CVE-2024-23672,5.4,Medium,Web Application Stored Cross-Site Scripting,Sanitize user input and apply the application update,2026-09-19,High
+mail-01,mail01.demo.local,CVE-2021-26855,9.8,Critical,Exchange Server SSRF (ProxyLogon),Apply the Exchange Server security update,2026-10-10,Medium
+mail-01,mail01.demo.local,CVE-2020-0688,8.8,High,Exchange Server Remote Code Execution,Apply the February 2020 Exchange update,2026-06-14,Medium
+mail-01,mail01.demo.local,CVE-2016-2183,5.3,Medium,SWEET32 Birthday Attack on TLS,Disable 3DES cipher suites,2026-01-19,Medium
+mail-01,mail01.demo.local,CVE-2015-4000,3.7,Low,Logjam Diffie-Hellman Downgrade Attack,Use 2048-bit or stronger DH groups,2026-02-01,Medium
+file-01,file01.demo.local,CVE-2017-0144,8.1,High,SMBv1 Remote Code Execution (EternalBlue),Disable SMBv1 and apply MS17-010,2026-09-09,Medium
+file-01,file01.demo.local,CVE-2021-34527,8.8,High,Windows Print Spooler Remote Code Execution (PrintNightmare),Apply the July 2021 security update,2026-11-01,Medium
+file-01,file01.demo.local,CVE-2021-34527,8.8,High,Windows Print Spooler Remote Code Execution (PrintNightmare),Apply the July 2021 security update,2026-11-06,Medium
+file-01,file01.demo.local,CVE-2016-2115,5.9,Medium,SMB Signing Not Required,Enable SMB signing on clients and servers,2026-09-25,Medium
+ws-0142,ws0142.demo.local,CVE-2023-28252,7.8,High,Windows CLFS Elevation of Privilege,Apply the April 2023 security update,2026-05-30,Low
+ws-0142,ws0142.demo.local,CVE-2022-37969,7.8,High,Windows CLFS Elevation of Privilege,Apply the September 2022 security update,2026-10-15,Low
+ws-0142,ws0142.demo.local,CVE-2011-3389,4.3,Medium,TLS 1.0 Protocol BEAST Attack,Disable TLS 1.0 and prefer TLS 1.2 or later,2026-03-03,Low
